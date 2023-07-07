@@ -147,3 +147,6 @@ const myPromise = new Promise(
 // Pilas y Colas
 // timers (setTimeout, setImmediate)
 // event loop
+
+git add .
+git status

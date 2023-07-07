@@ -3,6 +3,7 @@ const nextConfig = {}
 
 module.exports = {
     ...nextConfig,
+    
     env: {
         ZAPATITOS_API_KEY: "AIzaSyAE3ZYjcylS6kghkei0yQxkgz6N2BANiqo",
         ZAPATITOS_AUTH_DOMAIN: "dsm-3a-10e49.firebaseapp.com",
