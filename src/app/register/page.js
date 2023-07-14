@@ -1,11 +1,8 @@
 'use client'
-import React, { useState } from "react";
-import TextField from '@mui/material/TextField';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
+import { useState } from "react";
 import "./login.css"
 
-export default function Login() {
+export default function Register() {
 
     const [state, setState] = useState({
         email: "",
@@ -21,31 +18,26 @@ export default function Login() {
     }
 
     return (
-        <Stack
-            width="500px"
-            spacing={2} // int 1 / donde 1 es 8px
-            py="10px"
-            m={4}
-        >
+        <div className="container">
 
-            <TextField 
+            <input 
                 onChange={handleChange} 
                 name="email" 
                 value={state.email} 
                 type="text" 
-                label="email" 
+                placeholder="email" 
             />
 
-            <TextField 
+            <input 
                 name="password" 
                 onChange={handleChange} 
                 type="password" 
-                label="123456" 
+                placeholder="123456" 
             />
 
-            <Button variant="outlined">Login</Button>
+            <button>Login</button>
 
-        </Stack>
+        </div>
     )
 
 }
